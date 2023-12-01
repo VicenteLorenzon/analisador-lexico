@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Analisador Léxico</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div id="mainContent">
+    <nav id="mainNav" style="text-align: center;">
+      <output><strong>Tokens adicionados</strong></output>
+      <div id="divTokens" class="divToken"></div>
+    </nav>
+    <section'>
+      <div class="wrapper">
+        <div class="user-input-wrp">
+          <span class="label">Digite o token para adicionar</span>
+          <input id="inputToken" type="text" class="inputText" onchange="addTokenToTokenList(this.value)">
+        </div>
+        <div class="user-input-wrp">
+          <span class="label">Palavra para testar</span>
+          <input id="inputPalavra" type="text" class="inputText" oninput="wordChange(this.value)">
+        </div>
+      </div>
+      </section>
+      <div id="divTable" class="tg-wrap">
+        <table id="tableAutomato" class="tg">
+        </table>
+      </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
